@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover quick and easy dinner ideas, recipes, and meal inspirations at QuickDinnerIdeas. Perfect for busy weeknights, couples, families, and anyone looking for delicious meals with minimal prep!" />
+  <title>QuickDinnerIdeas - Quick & Easy Meal Recipes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: url('images/kitchen-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header, footer {
+      background-color: rgba(245, 106, 0, 0.9);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    nav {
+      background-color: rgba(255, 255, 255, 0.95);
+      text-align: center;
+      padding: 15px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #f56a00;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: rgba(255,255,255,0.95);
+      border-radius: 8px;
+    }
+    h1, h2, h3 { color: #222; }
+    section { margin-bottom: 50px; }
+    .recipe-highlight {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .recipe-highlight:hover {
+      transform: scale(1.02);
+    }
+    .recipe-highlight img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+    .recipe-highlight h3 { margin: 0 0 10px 0; }
+    a.internal-link {
+      color: #f56a00;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    ul { list-style-type: disc; padding-left: 20px; }
+    ul li { margin: 10px 0; }
+    .cookie-banner {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      display: none;
+      z-index: 1000;
+    }
+    .cookie-banner button {
+      background: #f56a00;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-left: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookieBanner').style.display = 'block';
+      }
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookieBanner').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>QuickDinnerIdeas</h1>
+    <p>Find the perfect quick and easy meal ideas for dinner tonight!</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Quick & Easy Dinner Ideas</h2>
+      <p>Looking for <strong>quick meals for dinner</strong>, <strong>food recipes for dinner</strong>, or <strong>good recipes for dinner</strong>? You’re in the right place. We bring you delicious <strong>ideas for dinner tonight</strong>, <strong>quick easy meals for dinner</strong>, and so much more to satisfy your cravings without spending hours in the kitchen.</p>
+      <p>Explore our <a class="internal-link" href="recipes.html">quick and easy dinner recipes</a> specially curated for busy individuals, couples, and families.</p>
+    </section>
+
+    <section>
+      <h2>What You'll Find Here</h2>
+      <ul>
+        <li><a class="internal-link" href="recipes.html">Quick easy supper ideas</a></li>
+        <li><a class="internal-link" href="recipes.html">Dinner meals ideas</a></li>
+        <li><a class="internal-link" href="recipes.html">Cooking ideas for dinner</a></li>
+        <li><a class="internal-link" href="recipes.html">Yummy recipes for dinner</a></li>
+        <li><a class="internal-link" href="recipes.html">Dinner for tonight</a></li>
+        <li><a class="internal-link" href="recipes.html">Easy meals for dinner for two</a></li>
+        <li><a class="internal-link" href="recipes.html">Recipes with ground beef</a></li>
+        <li><a class="internal-link" href="recipes.html">Healthy meals made with hamburger</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Featured Dinner Recipes</h2>
+      <div class="recipe-highlight">
+        <img src="images/garlic-butter-chicken.jpg" alt="Garlic Butter Chicken">
+        <div>
+          <h3><a class="internal-link" href="recipes.html#garlic-butter-chicken">Garlic Butter Chicken</a></h3>
+          <p>A mouthwatering recipe that’s fast and easy, perfect for any night of the week. One of the best <strong>dinner ideas using ground beef</strong> alternatives.</p>
+        </div>
+      </div>
+      <div class="recipe-highlight">
+        <img src="images/beef-taco.jpg" alt="Easy Beef Tacos">
+        <div>
+          <h3><a class="internal-link" href="recipes.html#easy-beef-tacos">Easy Beef Tacos</a></h3>
+          <p>Fast, flavorful, and perfect for the whole family. One of our most popular <strong>quick & easy dinners</strong>.</p>
+        </div>
+      </div>
+      <div class="recipe-highlight">
+        <img src="images/pasta-skillet.jpg" alt="One-Pan Pasta Skillet">
+        <div>
+          <h3><a class="internal-link" href="recipes.html#pasta-skillet">One-Pan Pasta Skillet</a></h3>
+          <p>Minimal cleanup, maximum flavor. The perfect <strong>quick meal to cook for dinner</strong> idea.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="cookie-banner" id="cookieBanner">
+    This site uses cookies to enhance your experience. By continuing to browse, you accept our cookie policy.
+    <button onclick="acceptCookies()">Accept</button>
+  </div>
+  <footer>
+    <p>&copy; 2025 QuickDinnerIdeas. All rights reserved.</p>
+  </footer>
+</body>
+</html>
